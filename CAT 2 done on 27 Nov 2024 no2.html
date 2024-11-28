@@ -1,117 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {
-  font-family: Arial, sans-serif;
- 
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+        h1{
+            padding-left: 270px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
 
-.container {
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  
-}
-
-label {
- 
-  display: inline-block;
-  margin-right: 5px;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-  
-  
-  
-}
-
-input[type="submit"],
-input[type="reset"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-input[type="reset"] {
-  background-color: #f44336;
-}
-
-input[type="reset"]:hover {
-  background-color: #da4436;
-}
-
-.error {
-  color: red;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-</style>
+        .button{
+            padding-left: 230px;
+            padding-top: 3px;  
+        }
+        .label2{
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        .label4{
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        .label6{
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        .label8{
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        
+    </style>
 </head>
 <body>
+    <form>
+        <div class="main">
+            <h1>Register Account</h1>
+            <div class="label1">
+                <label for="full-name">Full Name:</label>
+                <span style="padding-left:51px"><input type="text" id="full-name" name="full-name" placeholder="as" required></span>
+                 <span style="padding-left:45px"><span style="color:red">User name must be at least 4 characters</span></span>
+                    <br>
+            </div>
+            <div class="label2">
+                <label for="password">Password:</label>
+                <span style="padding-left:57px">   <input type="text"  id="digit" name="password" placeholder="••" required></span> 
+               <span style="padding-left:45px">     <span style="color:red">Password must be at least 4 characters</span></span>
+                    <br>
 
-<div class="container">
-  <h2>Register Account</h2>
+            </div>
+          
+           <div class="label3">
+            <label for="confirm-password">Confirm Password:</label>
+            <span>  
+                 <input type="text" id="confirm-password" name="confirm-password" placeholder="••••" required>
+                </span> 
+              <span style="padding-left:45px">
+                 <span style="color:red">Passwords do not match</span>
+                </span> 
+                <br>
+           </div>
+           <div class="label4">
+            <label for="email">Email:</label>
+            <span style="padding-left:82px"> 
+                 <input type="email" id="email" name="email" placeholder="john@gmail" required><span style="padding-left:50px"><span style="color:red">Invalid email format</span></span><br>
+                </span>
+        
+                <span style="padding-left:130px">Format:john@gmail.com</span>
+                <br>
+           </div>
+           
+          <div class="label5">
+            <label for="phone">Phone Number:</label>
+            <span style="padding-left:24px">  
+                 <input type="tel" id="phone" name="phone" placeholder="111111111111111" required><span style="padding-left:50px"><span style="color:red">Invalid phone number</span></span><br>
+                </span> 
+                <span style="padding-left:130px">Format:0XXX-XXX-XXX</span> 
+                <br>
+          </div>
+          <div class="label6">
+            <label for="zip">Zip Code:</label>
+            <span style="padding-left:61px">
+                <input type="zip" id="zip" name="zip" placeholder="11111111111111111111111" required><span style="padding-left:50px"><span style="color:red">Invalid zip code</span></span><br>
+            </span> 
+                <span style="padding-left:130px">Format:Use 5 or 9 digits Zip Code</span>
+                <br>
+          </div>
+          <div class="label7">
+            <label for="card">Card Type:</label>
+            <span style="padding-left:55px"> 
+             <select id="card" name="card" required>
+            </span> 
+                  <option value="">visa</option>
+                  <option value="male">mastercard</option>
+                  <option value="female">giftcard</option>
+                  <option value="other">M-pesa</option>
+                </select>
+                
+                <br>
+          </div>
+          <div class="label8">
+            <label for="card">Card Number:</label>
+            <span style="padding-left:34px">   
+                 <input type="card" id="card" name="card" placeholder="1111111111111111111" required><span style="padding-left:50px"><span style="color:red">Invalid card number format</span></span><br>
+                </span> 
+                <span style="padding-left:130px">Format: 1111-2222-3333-4444</span>
+                <br>
+          </div>
+          <div class="label9">
+            <label for="expiry">Expiration Date:</label>
+            <span style="padding-left:21px"> 
+                   <input type="expiry" id="expiry" name="expiry" placeholder="11111111111111111111111" required><span style="padding-left:50px"><span style="color:red">Invalid date format</span></span><br>
+                </span> 
+                <span style="padding-left:130px">Format: YYYY-MM-DD</span>
+                <br>
+          </div>
+            <div class="button">
+                <button>Register</button>  <span style="padding-left:6px"><button>Clear Form</button></span>   
+            </div>
 
-  <form>
-    <label for="Full Name">Full Name :</label>
-<input type=" text"id="Full Name"  name="Full Name" required>
-    <label for="password">Password :</label>
-<input type="password" id="password" name="password" required minlength="4">
-
-<label for="confirmPassword">Confirm Password:</label>
-<input type="password" id="confirmPassword" name="confirmPassword" required>
-
-<label for="email">Email :</label>
-<input type="email" id="email" name="email" required>
-
-<label for="phone">Phone Number:</label>
-<input type="tel" id="phone" name="phone" required>
-
-<label for="zip">Zip Code:</label>
-<input type="number" id="zip" name="zip" required>
-
-<label for="cardType">Card Type:</label>
-<select id="cardType" name="cardType" required>
-    <option value="visa">Visa</option>
-    <option value="mastercard">MasterCard</option>
-    <option value="amex">American Express</option>
-</select>
-
-<label for="cardNumber">Card Number:</label>
-<input type="text" id="cardNumber" name="cardNumber" required>
-
-<label for="expirationDate">Expiration Date:</label>
-<input type="month" id="expirationDate" name="expirationDate" required>
-
-<input type="submit" value="Register">
-<input type="button" value="Clear Form" onclick="document.getElementById('registerForm').reset();">
-  </form>
-</div>
-
+        </div>
+    </form>
 </body>
-</html> 
+</html>
